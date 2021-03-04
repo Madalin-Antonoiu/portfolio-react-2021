@@ -411,7 +411,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
-  max-height:360.72px;
+  min-height:360.72px;
 }
 
 .portfolio__item {
