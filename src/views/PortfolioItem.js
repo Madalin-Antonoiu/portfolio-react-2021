@@ -249,14 +249,11 @@ const PortfolioItem = () => {
             </h1>
             <p className="section__subtitle section__subtitle--intro project-intro">{subtitle}</p>
 
-            <Image
-                placeholderColor="#eee" src={image} alt="" className="intro__img" />
+            <Image placeholderColor="#eee" src={image} alt="" className="portfolio_item_image" />
         </section>
 
 
         <div className="portfolio-item-individual">
-
-
 
             <p>
                 <h4 className="centered-span">Built with</h4>
@@ -271,8 +268,6 @@ const PortfolioItem = () => {
             {secondaryImage ? <p><h4 className="centered-span">Screenshot(s)</h4></p> : ""}
 
 
-
-
             <p>
                 {/* i could also have alts written in the code and display them for each image */}
                 < Image
@@ -282,12 +277,19 @@ const PortfolioItem = () => {
                 />
 
                 <br />
-                < Image
+
+
+
+                {tertiaryImage ? <div>
+                    <br />
+                    < Image
                     placeholderColor="#eee"
                     src={tertiaryImage} alt=""
-
+                    className="preview"
                 />
 
+                </div>
+                    : ""}
 
 
                 {fourthImage ? <div>
@@ -295,7 +297,7 @@ const PortfolioItem = () => {
                     < Image
                         placeholderColor="#eee"
                         src={fourthImage} alt=""
-
+                        className="preview"
                     />
 
                 </div>
@@ -306,7 +308,7 @@ const PortfolioItem = () => {
                     < Image
                         placeholderColor="#eee"
                         src={fifthImage} alt=""
-
+                        className="preview"
                     />
 
                 </div>
@@ -317,7 +319,7 @@ const PortfolioItem = () => {
                     < Image
                         placeholderColor="#eee"
                         src={sixthImage} alt=""
-
+                        className="preview"
                     />
 
                 </div>
@@ -329,7 +331,7 @@ const PortfolioItem = () => {
                     < Image
                         placeholderColor="#eee"
                         src={seventhImage} alt=""
-
+                        className="preview"
                     />
 
                 </div>
