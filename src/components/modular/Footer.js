@@ -16,13 +16,13 @@ const About = () => {
 
         <p>
 
-            <a href={() => false} style={{ cursor: "pointer", marginRight: "10px" }} className="footer__link" onClick={() => setSendMessage(!sendMessage)}>
-                <span className="iconify icon:carbon:email" ></span> 
+            <a href={() => false} style={{ cursor: "pointer", marginRight: "25px" }} className="footer__link" onClick={() => setSendMessage(!sendMessage)}>
+                <span className="iconify icon:carbon:email" width="40px"></span> 
                 
             </a>
 
             <a href="https://github.com/Madalin-Antonoiu"  target="_blank" rel="noreferrer"  style={{ cursor: "pointer" }} className="footer__link" >
-                <span class="iconify" data-icon="akar-icons:github-fill" data-inline="false"></span>
+                <span class="iconify" data-icon="akar-icons:github-fill" width="40px"></span>
             </a>
         </p>
 
