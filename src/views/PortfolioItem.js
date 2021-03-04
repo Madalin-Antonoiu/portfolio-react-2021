@@ -26,7 +26,8 @@ const PortfolioItem = () => {
             description: {
                 p1: "I have developed this project back in 2018 as a mean to learn JavaScript myself. I started it with reusability and non-coder adoption in mind when it comes to creating websites.",
             },
-            disclaimer: "* This project is no longer maintained, it is highly possible you encounter bugs in the live example."
+            disclaimer: "* This project is no longer maintained, it is highly possible you encounter bugs in the live example.",
+            github: "https://github.com/Madalin-Antonoiu/webdrop-online"
 
         },
         yousync: {
@@ -34,7 +35,6 @@ const PortfolioItem = () => {
             subtitle: "Youtube with friends in real time",
             image: require(`../images/vue-yousync/yousync.webp`).default,
             secondaryImage: require(`../images/vue-yousync/yousync3.webp`).default,
-            // tertiaryImage,
             link: "",
             stack: ["html-5", "css-3", "vue"],
             features: [
@@ -50,7 +50,8 @@ const PortfolioItem = () => {
                 p2: "",
                 p3: ""
             },
-            disclaimer: "* This project is no longer maintained, it is highly possible you encounter bugs in the live example."
+            disclaimer: "* This project is no longer maintained, it is highly possible you encounter bugs in the live example.",
+            github: "https://github.com/Madalin-Antonoiu/YouSync"
         },
         turnbasedrpg: {
             title: "Turn-Based RPG",
@@ -79,6 +80,7 @@ const PortfolioItem = () => {
             ],
             description: {
             },
+            github: "https://github.com/Madalin-Antonoiu/TurnBasedRPGDemo-WebGL"
 
         },
         iss: {
@@ -94,6 +96,7 @@ const PortfolioItem = () => {
             ],
             description: {
             },
+            github: "https://github.com/Madalin-Antonoiu/where-is-iss"
 
         },
         meetups: {
@@ -111,6 +114,7 @@ const PortfolioItem = () => {
             description: {
                 p1: "The sole reason for this project was to explore the posibilities and teach myself Svelte and Rollup. ",
             },
+            github: "https://github.com/Madalin-Antonoiu/stores-finished"
 
         },
         wireframe: {
@@ -133,6 +137,7 @@ const PortfolioItem = () => {
                 p1: "Often times i find myself not able to see the forest for the trees, namely when i seek common structural patterns in well designed websites, the text and image get in the way. By creating this extension, i can now find them much easier without being distracted by any of it."
 
             },
+            github: "https://github.com/Madalin-Antonoiu/Wireframe-Extract---Chrome-Extension"
 
         },
         backendapi: {
@@ -153,6 +158,7 @@ const PortfolioItem = () => {
                 p2: "This is integrated with a front end, see /project/cryptofrontend."
 
             },
+            github: "https://github.com/Madalin-Antonoiu/ctt-server"
 
         },
         cryptofrontend: {
@@ -182,6 +188,7 @@ const PortfolioItem = () => {
                 p2: "Work in progress, live example soon."
 
             },
+            github: "https://github.com/Madalin-Antonoiu/ctt-client"
 
         },
 
@@ -213,13 +220,14 @@ const PortfolioItem = () => {
 
     const features = options[location]?.features;
     const disclaimer = options[location]?.disclaimer;
+    const github = options[location]?.github;
 
     const history = useHistory();
 
 
 
     const stacklist = stack?.map((each) => {
-        return <div key={`logos:${each}`} className="iconify " data-icon={`logos:${each}`} data-inline="false">
+        return <div key={`logos:${each}`} className="iconify iconify_me" data-icon={`logos:${each}`} data-inline="false">
             <span className="tooltip">Praesent ut tincidunt ligula. Donec at sem sit amet nulla porttitor consequat sit amet quis velit. Phasellus imperdiet mi in velit gravida tincidunt.</span>
 
         </div>
@@ -331,7 +339,8 @@ const PortfolioItem = () => {
 
 
             <p>{p2}</p>
-
+            <p><h4 className="centered-span"><a href={github} target="_blank" rel="noreferrer" style={{ float: "right", textDecoration: "none" }}><span className="iconify"  style={{marginRight: "5px"}}  data-icon="logos:github-icon"></span> <span>Source Code</span></a> </h4></p>
+           
 
             {link ? <div>       <p>
                 <sub>{disclaimer}</sub></p>
