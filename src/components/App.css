@@ -256,9 +256,9 @@ header {
 
 .intro__img {
   box-shadow: var(--bs);
-  /* min-height: 200px; */
-  background-position: center;
+  background-position: 50%;;
   background-repeat: no-repeat;
+  min-height: 140.63px;
 }
 
 .lazyload-wrapper {
@@ -296,6 +296,7 @@ header {
   .intro__img {
     grid-area: img;
     min-width: 250px;
+    min-height: 274.59px;
     position: relative;
     z-index: 2;
   }
@@ -368,6 +369,8 @@ header {
 
 .about-me__img {
   box-shadow: var(--bs);
+ 
+  min-height: 352.69px;
 }
 
 @media (min-width: 600px) {

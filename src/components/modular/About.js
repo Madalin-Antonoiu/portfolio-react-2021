@@ -25,7 +25,6 @@ const About = () => {
         </div>
 
         <Image
-            loading="lazy"
             src={mine}
             alt="my_picture"
             className="about-me__img"

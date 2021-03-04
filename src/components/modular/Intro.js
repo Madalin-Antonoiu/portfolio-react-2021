@@ -9,12 +9,15 @@ const Intro = () => {
         </h1>
         <p className="section__subtitle section__subtitle--intro">software developer</p>
 
-        <Image
-            src={profilePic}
-            alt="Me smiling"
-            className="intro__img preview"
-            placeholderColor="#eee"
-        />
+
+            <Image
+                src={profilePic}
+                alt="Me smiling"
+                className="intro__img "
+                placeholderColor="#eee"
+            />
+    
+
 
     </section>
 
