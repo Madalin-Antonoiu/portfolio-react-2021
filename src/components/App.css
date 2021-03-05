@@ -273,13 +273,15 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 460.83px;
+  margin: 0 auto;
 }
 
 .portfolio_item_image{
   box-shadow: var(--bs);
   background-position: center;
   background-repeat: no-repeat;
- max-height: 235.69px;
+ min-height: 137.31px;
+ margin: 0 auto;
 }
 
 .lazyload-wrapper {
@@ -303,11 +305,13 @@ header {
 }
 .preview{
   min-height: 235.69px;
+  margin: 0 auto;
 }
 .about-me__img {
   box-shadow: var(--bs);
   min-height: 521.97px; 
   width: 100%;
+  margin: 0 auto;
 }
 
 .my__img {
@@ -341,6 +345,7 @@ header {
 
   .preview{
     min-height: 337.5px;
+    margin: 0 auto;
   }
 
   .intro__img {
@@ -349,6 +354,7 @@ header {
     min-height: 274.59px; 
     position: relative;
     z-index: 1;
+    margin: 0 auto;
   }
 
   .portfolio_item_image{
@@ -433,6 +439,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 10px;
   min-height:360.72px;
+  margin: 0 auto;
 }
 
 .portfolio__item {
@@ -498,6 +505,7 @@ header {
     position: relative;
     z-index: 2;
     min-height: 352.69px; 
+    margin: 0 auto;
   }
 
 
