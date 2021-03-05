@@ -13,7 +13,7 @@ const Intro = () => {
             <Image
                 src={profilePic}
                 alt="Me smiling"
-                className="intro__img "
+                className="my__img"
                 placeholderColor="#eee"
             />
     
