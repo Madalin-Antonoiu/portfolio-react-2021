@@ -312,8 +312,8 @@ header {
 
 .my__img {
   grid-area: img;
-  min-width: 250px;
-  min-height: 274.59px;
+  min-width: 100%;
+  height: auto;
   position: relative;
   z-index: 2;
 }
