@@ -269,15 +269,17 @@ const PortfolioItem = () => {
 
 
             <p>
-                {/* i could also have alts written in the code and display them for each image */}
-                < Image
+
+                {secondaryImage ? <div className="centered-span">
+                    <br />
+                    < Image
                     placeholderColor="#eee"
                     className="preview"
                     src={secondaryImage} alt=""
                 />
 
-                <br />
-
+                </div>
+                    : ""}
 
 
                 {tertiaryImage ? <div>
